@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "what-a-face"
+version = "0.1.0"
+description = ""
+authors = ["kdankova <12kdankova@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = ">=4.7.0.68,<4.8.0.0"
+cmake = "^3.29.6"
+pillow = "^10.3.0"
+face-recognition = "^1.3.0"
+imageio = "^2.34.1"
+imageio-ffmpeg = "^0.5.1"
+numpy = ">=1.26.0,<1.27.0"
+tqdm = "^4.66.4"
+pandas = "^2.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+include = '\.pyi?$'
